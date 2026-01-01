@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Ferreo Valentino</title>
+    <link rel="icon" href="./logo.ico">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="./axios@1.13.min.js"></script>
+    <!-- script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>-->	
+    <script src="./libreria.js"></script>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+		<div class="border border-2 border-dark" id="scelte">
+      <p>Scegli Genere:</p>
+			<input type="radio" name="optGroup" id="all" checked="checked"> All <br>
+			<input type="radio" name="optGroup" id="male" > Male <br>
+			<input type="radio" name="optGroup" id="female" > Female <br>
+
+      <label for="users" id="nusers">Scegli N. Users:</label>
+      <input type="range" id="users" name="users" min="5" max="40" value="10">
+
+      <p>Scegli Nazione:</p>
+      <div>
+        <input type="checkbox" id="AU" value="AU"/>
+        <label for="AU">Australia</label>
+      </div>
+      <div>
+        <input type="checkbox" id="BR" value="BR"/>
+        <label for="BR">Brazil</label>
+      </div>
+      <div>
+        <input type="checkbox" id="FR" value="FR"/>
+        <label for="FR">France</label>
+      </div>
+      <div>
+        <input type="checkbox" id="DE" value="DE"/>
+        <label for="DE">Germany</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ES" value="ES"/>
+        <label for="ES">Spain</label>
+      </div>
+      <div>
+        <input type="checkbox" id="US" value="US"/>
+        <label for="US">United States</label>
+      </div>
+
+      <label for="dim">Scegli IMG:</label>
+      <select id="dim" name="dim">
+        <option value="med">Medium</option>
+        <option value="lar">Large</option>
+        <option value="thumb">Thumbnail</option>
+      </select>
+    </div>
+
+    <button class="theme-button">☀️</button>
+    <div class="container text-center border border-2 border-dark"  id="container">
+        <div id="card">
+          
+        </div>
+        
+        <div class="container-fluid my-3" id="buttons">
+          <button id="first">first</button>
+          <button class="mx-2" id="previous">←</button>
+          <div id="totale"></div>
+          <button class="mx-2" id="next"> →</button>
+          <button id="last">last</button>
+        </div>
+    </div>
+    
+    
+		<div class="text-center fixed-bottom">
+			<hr>
+			<p>Copyright &copy; 2025 Ferrero Valentino | Random User.</p>
+		</div>
+  </body>
+</html>

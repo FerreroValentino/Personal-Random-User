@@ -1,0 +1,86 @@
+:root {
+    --background-color: #f4f4f9;
+    --text-color: #333333;
+    --card-color: #ffffff;
+    --button-color: #333333;
+}
+
+.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --card-color: #444444;  
+	--button-color: #dddddd;
+}
+
+body {
+    height: 100vh;
+    margin: 0; 
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.main-container {
+    width: 400px;
+	height:400px;
+    margin:0 auto;
+    display: flex;
+    flex-direction:column;
+	justify-content:flex-start; /* allineamento verticale */
+    align-items:center;         /* allineamento orizzontale */
+    background-color: var(--card-color);
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+
+    background-color: var(--button-color);
+    transition: background-color 0.4s;
+    cursor: pointer;   
+}
+
+
+.theme-button:hover {
+    background-color: #666666;
+}
+
+
+#container{
+    width: 300px;
+}
+
+#buttons{
+    display:flex;
+}
+
+#buttons button{
+    height: 50px;
+    width: 50px;
+}
+
+#buttons div{
+    margin-top: 13px;
+}
+
+#scelte{
+    float:left;
+    width:160px;
+    margin:10px;
+    padding:20px;
+    border-radius:15px;
+}
+
+#scelte p{
+    margin: 0px;
+}
