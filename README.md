@@ -23,7 +23,7 @@ scleta tra: AU, BR, FR, DE, ES, US,
 
 scelta dimensione:
 permette di cambiare la visualizzazione dell'immagine user,
-scleta tra: thumbnail, medium (preselezionata), large
+scleta tra: thumbnail, medium (preselezionata), large,
 
 cambio tema:
 presente una scelta tra tema scuro e chiaro in alto a destra,
